@@ -21,12 +21,36 @@
             color: #ffffff;
             font-family: "Press Start 2P", system-ui;
             font-weight: 400;
-            font-style: normal;       
+            font-style: normal;      
+            background-image: url('https://i.pinimg.com/originals/0d/86/78/0d867824d5a19b2f1eee7293e906a3ef.gif'); /* Replace with the actual path to your gif */
+            background-repeat: repeat;
+            background-position: left top, right bottom;
+            background-size: 100px;
+            z-index: -1; 
+        }
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+            z-index: -1; /* Ensures this sits between the background and content */
         }
         .container {
+            position: relative;
+            z-index: 1;
             padding: 20px;
             max-width: 400px;
             text-align: center;
+            background-color: rgba(0, 0, 0); /* Semi-transparent black background */
+            border-radius: 10px; /* Optional: rounds the corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds a subtle shadow */
+            margin: auto; /* Centers the container */
+            border-color: #ffffff;
+            border-style:double;
+            border-width: 4px;
         }
         .headline, .section-title {
             font-size: 2em;
@@ -78,13 +102,20 @@
             margin: 0 10px;
             font-size: small;
         }
+        body {
+            background-image: src="space.gif";
+            background-repeat: repeat;
+            background-position: left top, right bottom; /* Example positions */
+        }
     </style>
 </head>
+
+
 <body>
     <div class="container">
         <img src="Basedinvaders.png" alt="invaders">
         <div class="headline">Based Invaders</div>
-        <p class="description">Xxx</p>
+        <p class="description">the original meme token for the $BASE network <br><br> We're building.</p>
         <a href="https://raydium.io/swap/?outputCurrency=EkKRqwaPhQjG4fx6XqgzwSbjhVGNR1wJxtTPWTpacYbj"><button>Buy $INVADERS</button></a>
     </div>
     <div class="footer">
